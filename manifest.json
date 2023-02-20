@@ -1,6 +1,6 @@
 {
     "name": "URL Summary",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "Summarizes the current tab's URL",
     "browser_action": {
