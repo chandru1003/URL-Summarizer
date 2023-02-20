@@ -1,7 +1,7 @@
 // Get the current tab's URL
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     var currentTabUrl = tabs[0].url;
-    var api_key = "<put yourApi key>"; // from SMMry website
+    var api_key = "82A11696E4"; // from SMMRY website
     var smmry_url = "https://api.smmry.com?SM_API_KEY=" + api_key + "&SM_LENGTH=5&SM_URL=" + encodeURIComponent(currentTabUrl);
     var summary = "";
   

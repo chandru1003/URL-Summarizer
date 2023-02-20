@@ -2,19 +2,50 @@
 <html>
   <head>
     <style>
-    body {
-        width: 300px;
-        height: 100px;
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+        color: #333;
+        width: 600px;
+      }
+      h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0 10px;
+        color: #2e6da4;
+      }
+      p {
         margin: 0;
-        padding: 0;
-        font-size: 14px;
-    }
-</style>
-    <title>URL Summary</title>
+      }
+      #summary {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #2e6da4;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #1d4f7c;
+      }
+    </style>
+    <title>URL Summarizer</title>
     <script src="popup.js"></script>
+        
   </head>
   <body>
-    <h1>URL Summary</h1>
+    <h1>URL Summarizer</h1>
+    <p>Enter a URL to summarize:</p>
+    
+    <button id="summarize-btn">Summarize</button>
     <div id="summary"></div>
+    
   </body>
 </html>
