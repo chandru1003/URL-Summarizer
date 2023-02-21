@@ -12,9 +12,11 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       if (xhr.readyState == 4 && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
         summary = response.sm_api_content;
-        // Limit the summary to 300 to 500 characters
-        summary = summary.substring(0, Math.min(summary.length, 500));
-        summary = summary.substring(0, Math.max(summary.lastIndexOf("."), 300));
+       
+        // Limit the summary 
+        summary = summary.substring(0, Math.min(summary.length, 1000));
+        summary = summary.substring(0, Math.max(summary.lastIndexOf("."), 500));
+        
         // Display the summary in the popup
         document.getElementById("summary").textContent = summary;
       }
