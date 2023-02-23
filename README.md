@@ -5,3 +5,14 @@
  
 ![output](https://user-images.githubusercontent.com/55582956/220175771-1872bacf-eeef-4ba7-bcf8-d30383091003.jpg)
 
+### Usage
+To use this extension, follow the steps below:
+
+- Clone or download this repository and extract the files to a new folder.
+- 2.In Brave, go to "Settings" > "Extensions".
+- 3.Toggle on the "Developer mode" switch.
+- 4.Click on "Load unpacked" and select the folder containing the extracted files.
+-5.The extension should now be installed and the icon will appear in the toolbar.
+-6.Click the icon to display a summary of the current tab's URL.
+
+Note: An API key is required to use the extension. You can obtain an API key from SMMRY. Once you have an API key, replace the value of SMMRY_API_KEY in popup.js with your own key.
