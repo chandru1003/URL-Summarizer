@@ -1,13 +1,12 @@
 // Get the current tab's URL
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    var currentTabUrl = tabs[0].url;
-    var api_key = "apikey"; // from OpenAI website
+    var currentTabUrl =  tabs[0].url;
+    var api_key = "apikeys"; // from OpenAI website
     var openai_url = "https://api.openai.com/v1/engines/davinci/completions";
-    var summary="";
     var data = {
         "prompt": " Please Summarize the content of " + currentTabUrl,
-        "temperature": 0.8,
-        "max_tokens": 300,
+        "temperature": 1.0,
+        "max_tokens": 200,
         
     };
   
